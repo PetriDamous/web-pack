@@ -1,4 +1,5 @@
 const path = require("path");
+// may darkest hour
 
 module.exports = {
     mode: "development",
