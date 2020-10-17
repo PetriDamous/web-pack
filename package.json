@@ -1,0 +1,26 @@
+{
+  "name": "web-pack",
+  "version": "1.0.0",
+  "description": "Custom web pack config for web projects.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwilliams64/web-pack.git"
+  },
+  "author": "Dimitri Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwilliams64/web-pack/issues"
+  },
+  "homepage": "https://github.com/dwilliams64/web-pack#readme",
+  "devDependencies": {
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
