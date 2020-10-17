@@ -1,5 +1,4 @@
 const path = require("path");
-// may darkest hour
 
 module.exports = {
     mode: "development",
@@ -11,6 +10,14 @@ module.exports = {
     resolve: {
         extensions: [
             ".js"
+        ]
+    },
+    modules: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            }
         ]
     }
 };
