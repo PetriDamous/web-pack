@@ -4,7 +4,7 @@
   "description": "Custom web pack config for web projects.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "start": "webpack",
     "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/dwilliams64/web-pack#readme",
   "devDependencies": {
     "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
     "sass": "^1.27.0",
     "sass-loader": "^10.0.3",
     "style-loader": "^2.0.0",
