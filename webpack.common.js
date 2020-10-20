@@ -11,8 +11,22 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/i,
+                test: /\.css$/,
                 use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
+            },
+            {
+                test: /\.(svg|png|jpg|gif)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "[name].[hash].[ext]",
+                        outputPath: "imgs"
+                    }
+                }
             }
         ]
     },
