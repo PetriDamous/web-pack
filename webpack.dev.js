@@ -10,6 +10,7 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, "dist/JS")
     },
     devServer: {
+        contentBase: './dist',
         open: "Chrome",
         compress: true,
         hot: true

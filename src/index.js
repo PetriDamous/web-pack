@@ -1,3 +1,3 @@
-const hello = "I like doggies";
+const hello = "I like turtles!!!";
 
-console.log(hello);
+alert(hello);
