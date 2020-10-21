@@ -20,9 +20,12 @@ module.exports = merge(common, {
       new HtmlWebpackPlugin({
         template: "./src/template.html",
         minify: {
-          removeAttributeQuotes: true,
           collapseWhitespace: true,
-          removeComments: true
+          removeComments: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          useShortDoctype: true
         }
       })
     ]
@@ -40,6 +43,16 @@ module.exports = merge(common, {
           "css-loader", //2. Turns css into commonjs
           "sass-loader" //1. Turns sass into css
         ]
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"]
+          }
+        }
       }
     ]
   }

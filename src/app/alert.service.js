@@ -21,3 +21,5 @@ export class AlertService {
     this.errorBox.classList.add("invisible");
   }
 }
+
+console.log("D");

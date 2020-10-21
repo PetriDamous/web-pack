@@ -25,5 +25,10 @@ module.exports = merge(common, {
         ]
       }
     ]
+  },
+  devServer: {
+    open: "Chrome",
+    compress: true,
+    hot: true
   }
 });
